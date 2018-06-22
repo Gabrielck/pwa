@@ -1,14 +1,21 @@
-<link rel="manifest" href="manifest.json">
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('serviceWorker.js')
-      .then(function () {
-        console.log('service worker criado');
-      })
-      .catch(function () {
-        console.warn('service worker falhou');
-      });
-  }
-</script>
-
+<html>
+<head>
+	<title>Ola mundo titulo</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link rel="manifest" href="manifest.json">
+	<script>
+	if ('serviceWorker' in navigator) {
+		navigator.serviceWorker.register('serviceWorker.js')
+		.then(function () {
+			console.log('service worker criado');
+		})	
+		.catch(function () {
+			console.warn('service worker falhou');
+		});
+	}
+	</script>
+</head>
+<body>
 Ola mundo
+</body>
+</html>
