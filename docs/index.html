@@ -1,1 +1,14 @@
-asdfsda
+<link rel="manifest" href="manifest.json">
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('serviceWorker.js')
+      .then(function () {
+        console.log('service worker criado');
+      })
+      .catch(function () {
+        console.warn('service worker falhou');
+      });
+  }
+</script>
+
+Ola mundo
